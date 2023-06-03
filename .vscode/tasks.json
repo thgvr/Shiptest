@@ -36,6 +36,19 @@
 			"command": "${command:dreammaker.reparse}",
 			"group": "build",
 			"label": "dm: reparse"
-		}
+		},
+		{
+			"type": "shell",
+			"command": "bin/temp-fast-test",
+			"windows": {
+				"command": ".\\bin\\temp-fast-test.cmd"
+			},
+			"problemMatcher": [
+				"$tsc",
+				"$eslint-stylish"
+			],
+			"group": "build",
+			"label": "dm: find hard deletes"
+		},
 	]
 }
