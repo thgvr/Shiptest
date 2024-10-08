@@ -58,7 +58,7 @@
 	name = "9mm armor-piercing bullet casing"
 	desc = "A 9mm armor-piercing bullet casing."
 	bullet_skin = "ap"
-	projectile_type =/obj/projectile/bullet/c9mm/ap
+	projectile_type = /obj/projectile/bullet/c9mm/ap
 
 /obj/item/ammo_casing/c9mm/hp
 	name = "9mm hollow point bullet casing"
@@ -87,6 +87,7 @@
 	caliber = ".45"
 	projectile_type = /obj/projectile/bullet/c45
 	bullet_per_box = 50
+	stack_size = 12
 
 /obj/item/ammo_casing/c45/surplus
 	name = ".45 surplus bullet casing"
