@@ -35,8 +35,6 @@
 /mob/living/simple_animal/can_be_implanted()
 	return healable //Applies to robots and most non-organics, exceptions can override.
 
-
-
 //What does the implant do upon injection?
 //return 1 if the implant injects
 //return 0 if there is no room for implant / it fails

@@ -123,27 +123,6 @@
 	new /obj/item/grenade/chem_grenade/ghostbuster(src)
 	new /obj/item/grenade/chem_grenade/ghostbuster(src)
 
-/obj/item/choice_beacon/augments
-	name = "augment box"
-	desc = "Contains augmentations. Can be used 3 times!"
-	uses = 3
-
-/obj/item/choice_beacon/augments/generate_display_names()
-	var/static/list/augment_list
-	if(!augment_list)
-		augment_list = list()
-		var/list/templist = list(
-		/obj/item/organ/cyberimp/brain/anti_drop,
-		/obj/item/organ/cyberimp/arm/toolset,
-		/obj/item/organ/cyberimp/arm/surgery,
-		/obj/item/organ/cyberimp/chest/thrusters,
-		/obj/item/organ/lungs/cybernetic/tier3,
-		/obj/item/organ/liver/cybernetic/tier3) //cyberimplants range from a nice bonus to fucking broken bullshit so no subtypesof
-		for(var/V in templist)
-			var/atom/A = V
-			augment_list[initial(A.name)] = A
-	return augment_list
-
 /obj/item/choice_beacon/mothplushies
 	name = "moth box"
 	desc = "Contains your favourite moth plushie!"

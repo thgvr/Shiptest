@@ -592,8 +592,6 @@
 		return ab.cost_check(ab.check_turf,owner,1)
 	return FALSE
 
-
-
 //Preset for general and toggled actions
 /datum/action/innate
 	check_flags = NONE

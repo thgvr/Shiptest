@@ -199,38 +199,6 @@
 
 /obj/item/assembly/flash/handheld //this is now the regular pocket flashes
 
-/obj/item/assembly/flash/armimplant
-	name = "photon projector"
-	desc = "A high-powered photon projector implant normally used for lighting purposes, but also doubles as a flashbulb weapon. Self-repair protocols fix the flashbulb if it ever burns out."
-	var/flashcd = 20
-	var/overheat = 0
-	//Wearef to our arm
-	var/datum/weakref/arm
-
-/obj/item/assembly/flash/armimplant/burn_out()
-	var/obj/item/organ/cyberimp/arm/flash/real_arm = arm.resolve()
-	if(real_arm?.owner)
-		to_chat(real_arm.owner, span_warning("Your photon projector implant overheats and deactivates!"))
-		real_arm.Retract()
-	overheat = TRUE
-	addtimer(CALLBACK(src, PROC_REF(cooldown)), flashcd * 2)
-
-/obj/item/assembly/flash/armimplant/try_use_flash(mob/user = null)
-	if(overheat)
-		var/obj/item/organ/cyberimp/arm/flash/real_arm = arm.resolve()
-		if(real_arm?.owner)
-			to_chat(real_arm.owner, span_warning("Your photon projector is running too hot to be used again so quickly!"))
-		return FALSE
-	overheat = TRUE
-	addtimer(CALLBACK(src, PROC_REF(cooldown)), flashcd)
-	playsound(src, 'sound/weapons/flash.ogg', 100, TRUE)
-	update_icon(ALL, TRUE)
-	return TRUE
-
-
-/obj/item/assembly/flash/armimplant/proc/cooldown()
-	overheat = FALSE
-
 /obj/item/assembly/flash/hypnotic
 	desc = "A modified flash device, programmed to emit a sequence of subliminal flashes that can send a vulnerable target into a hypnotic trance."
 	flashing_overlay = "flash-hypno"

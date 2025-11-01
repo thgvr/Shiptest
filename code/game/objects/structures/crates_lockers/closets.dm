@@ -54,14 +54,9 @@
 	if(populate)
 		PopulateContents()
 
-	RegisterSignal(src, COMSIG_ATOM_CANREACH, PROC_REF(canreach_react))
-
 /obj/structure/closet/LateInitialize()
 	take_contents(src)
 	return ..()
-
-/obj/structure/closet/proc/canreach_react(datum/source, list/next)
-	return COMPONENT_BLOCK_REACH //closed block, open have nothing inside.
 
 //USE THIS TO FILL IT, NOT INITIALIZE OR NEW
 /obj/structure/closet/proc/PopulateContents()

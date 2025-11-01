@@ -165,6 +165,12 @@
 #define ORGAN_SLOT_PARASITE_EGG "parasite_egg"
 #define ORGAN_SLOT_REGENERATIVE_CORE "hivecore"
 
+#define ORGAN_SLOT_RIGHT_ARM_AUG "r_arm_device"
+#define ORGAN_SLOT_LEFT_ARM_AUG "l_arm_device"
+#define ORGAN_SLOT_RIGHT_LEG_AUG "r_leg_device"
+#define ORGAN_SLOT_LEFT_LEG_AUG "l_leg_device"
+#define ORGAN_SLOT_LINK "cyber_link"
+
 //organ defines
 #define STANDARD_ORGAN_THRESHOLD 100
 #define STANDARD_ORGAN_HEALING 0.003

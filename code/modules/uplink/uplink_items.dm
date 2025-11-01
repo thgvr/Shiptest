@@ -171,13 +171,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	cost = 14 // normally 16
 	include_modes = list(/datum/game_mode/nuclear)
 
-/datum/uplink_item/bundles_TC/cyber_implants
-	name = "Cybernetic Implants Bundle"
-	desc = "A random selection of cybernetic implants. Guaranteed 5 high quality implants. Comes with an autosurgeon."
-	item = /obj/item/storage/box/cyber_implants
-	cost = 40
-	include_modes = list(/datum/game_mode/nuclear)
-
 /datum/uplink_item/bundles_TC/medical
 	name = "Medical bundle"
 	desc = "The support specialist: Aid your fellow operatives with this medical bundle. Contains a tactical medkit, \
@@ -1427,14 +1420,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	cost = 8
 	player_minimum = 20
 
-/datum/uplink_item/implants/antistun
-	name = "CNS Rebooter Implant"
-	desc = "This implant will help you get back up on your feet faster after being stunned. Comes with an autosurgeon."
-	item = /obj/item/autosurgeon/syndicate/anti_stun
-	cost = 12
-	surplus = 0
-	include_modes = list(/datum/game_mode/nuclear)
-
 /datum/uplink_item/implants/freedom
 	name = "Freedom Implant"
 	desc = "An implant injected into the body and later activated at the user's will. It will attempt to free the \
@@ -1467,55 +1452,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/storage/box/syndie_kit/imp_radio
 	cost = 4
 	restricted = TRUE
-
-/datum/uplink_item/implants/reviver
-	name = "Reviver Implant"
-	desc = "This implant will attempt to revive and heal you if you lose consciousness. Comes with an autosurgeon."
-	item = /obj/item/autosurgeon/syndicate/reviver
-	cost = 8
-	surplus = 0
-	include_modes = list(/datum/game_mode/nuclear)
-
-/datum/uplink_item/implants/stealthimplant
-	name = "Stealth Implant"
-	desc = "This one-of-a-kind implant will make you almost invisible if you play your cards right. \
-			On activation, it will conceal you inside a chameleon cardboard box that is only revealed once someone bumps into it."
-	item = /obj/item/storage/box/syndie_kit/imp_stealth
-	cost = 8
-
-/datum/uplink_item/implants/storage
-	name = "Storage Implant"
-	desc = "An implant injected into the body, and later activated at the user's will. It will open a small bluespace \
-			pocket capable of storing two regular-sized items."
-	item = /obj/item/storage/box/syndie_kit/imp_storage
-	cost = 8
-
-/datum/uplink_item/implants/thermals
-	name = "Thermal Eyes"
-	desc = "These cybernetic eyes will give you thermal vision. Comes with a free autosurgeon."
-	item = /obj/item/autosurgeon/syndicate/thermal_eyes
-	cost = 8
-	surplus = 0
-	include_modes = list(/datum/game_mode/nuclear)
-
-/datum/uplink_item/implants/uplink
-	name = "Uplink Implant"
-	desc = "An implant injected into the body, and later activated at the user's will. Has no telecrystals and must be charged by the use of physical telecrystals. \
-			Undetectable (except via surgery), and excellent for escaping confinement."
-	item = /obj/item/storage/box/syndie_kit/imp_uplink
-	cost = 4
-	// An empty uplink is kinda useless.
-	surplus = 0
-	restricted = TRUE
-
-/datum/uplink_item/implants/xray
-	name = "X-ray Vision Implant"
-	desc = "These cybernetic eyes will give you X-ray vision. Comes with an autosurgeon."
-	item = /obj/item/autosurgeon/syndicate/xray_eyes
-	cost = 10
-	surplus = 0
-	include_modes = list(/datum/game_mode/nuclear)
-
 
 //Race-specific items
 /datum/uplink_item/race_restricted
@@ -1648,13 +1584,6 @@ GLOBAL_LIST_INIT(uplink_items, subtypesof(/datum/uplink_item))
 	item = /obj/item/gun/chem
 	cost = 12
 	restricted_roles = list("Chemist", "Chief Medical Officer")
-
-/datum/uplink_item/role_restricted/laser_arm
-	name = "Laser Arm Implant"
-	desc = "An implant that grants you a recharging laser gun inside your arm. Weak to EMPs. Comes with a syndicate autosurgeon for immediate self-application."
-	cost = 10
-	item = /obj/item/autosurgeon/syndicate/laser_arm
-	restricted_roles = list("Roboticist")
 
 /datum/uplink_item/role_restricted/greykingsword
 	name = "Blade of The Grey Tide"

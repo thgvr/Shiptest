@@ -212,7 +212,7 @@
 	var/datum/component/storage/concrete/master = master()
 	if(!master)
 		return
-	. = COMPONENT_BLOCK_REACH
+	. = COMPONENT_ALLOW_REACH
 	next += master.parent
 	for(var/i in master.slaves)
 		var/datum/component/storage/slave = i
@@ -629,7 +629,7 @@
 			if(!stop_messages)
 				to_chat(M, span_warning("[I] is too large to fit in [host], make some space!"))
 			return FALSE
-	/////////////////
+	/////////////////f
 	if(isitem(host))
 		var/obj/item/IP = host
 		var/datum/component/storage/STR_I = I.GetComponent(/datum/component/storage)

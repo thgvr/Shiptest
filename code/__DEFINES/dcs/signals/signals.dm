@@ -170,6 +170,7 @@
 #define COMSIG_ATOM_CANREACH "atom_can_reach"
 	#define COMPONENT_BLOCK_REACH 1
 	#define COMPONENT_ALLOW_REACH (1<<0)
+	#define COMPONENT_FORCE_REACH (1<<1)
 ///for when an atom has been created through processing (atom/original_atom, list/chosen_processing_option)
 #define COMSIG_ATOM_CREATEDBY_PROCESSING "atom_createdby_processing"
 ///when an atom is processed (mob/living/user, obj/item/I, list/atom/results)
@@ -632,6 +633,11 @@
 	#define COMPONENT_STOP_RINGTONE_CHANGE 1
 #define COMSIG_PDA_CHECK_DETONATE "pda_check_detonate"
 	#define COMPONENT_PDA_NO_DETONATE 1
+
+// /obj/item/stock_parts/cell signals
+
+///Called by either cell/proc/give or cell/proc/use
+#define COMSIG_CELL_CHANGE_POWER "cell_change_power"
 
 // /obj/item/radio signals
 #define COMSIG_RADIO_NEW_FREQUENCY "radio_new_frequency" //called from base of /obj/item/radio/proc/set_frequency(): (list/args)

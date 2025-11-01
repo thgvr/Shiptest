@@ -170,66 +170,66 @@
 	stock_max = 7
 	availability_prob = 30
 
-/datum/blackmarket_item/tech/joywire
-	name = "Pleasure Vivifier Neural Implant"
-	desc = "Midi-Sim's ever popular pleasure vivifier implant promises a constant rush of dopamine to get you high on life."
-	item = /obj/item/organ/cyberimp/brain/joywire
+// /datum/blackmarket_item/tech/joywire
+// 	name = "Pleasure Vivifier Neural Implant"
+// 	desc = "Midi-Sim's ever popular pleasure vivifier implant promises a constant rush of dopamine to get you high on life."
+// 	item = /obj/item/organ/cyberimp/brain/joywire
 
-	cost_min = 500
-	cost_max = 1000
-	stock_min = 3
-	stock_max = 5
-	availability_prob = 50
+// 	cost_min = 500
+// 	cost_max = 1000
+// 	stock_min = 3
+// 	stock_max = 5
+// 	availability_prob = 50
 
-/datum/blackmarket_item/tech/joywire/spawn_item(loc)
-	if(prob(10))
-		var/obj/item/organ/cyberimp/brain/mindscrew/implant = ..()
-		implant.name = "\improper Midi-Sed pleasure vivifier"
-		implant.desc = "A widely popular (and addictive) implant produced by Miditeke-Sedari Tokoce that \
-		stimulates the brain's pleasure centers. \
-		Dramatically increases mood, but interferes with taste reception even if uninstalled. \
-		Its wires seem a little loose."
-		return new implant(loc)
-	return ..()
+// /datum/blackmarket_item/tech/joywire/spawn_item(loc)
+// 	if(prob(10))
+// 		var/obj/item/organ/cyberimp/brain/mindscrew/implant = ..()
+// 		implant.name = "\improper Midi-Sed pleasure vivifier"
+// 		implant.desc = "A widely popular (and addictive) implant produced by Miditeke-Sedari Tokoce that \
+// 		stimulates the brain's pleasure centers. \
+// 		Dramatically increases mood, but interferes with taste reception even if uninstalled. \
+// 		Its wires seem a little loose."
+// 		return new implant(loc)
+// 	return ..()
 
-/datum/blackmarket_item/tech/mindscrew
-	name = "MNDFCK Neural Implant"
-	desc = "Got a tough customer who refuses to crack? This aftermarket modification of the Midi-Sed pleasure vivifier will amplify their pain receptors and get them talking fast."
-	item = /obj/item/organ/cyberimp/brain/mindscrew
+// /datum/blackmarket_item/tech/mindscrew
+// 	name = "MNDFCK Neural Implant"
+// 	desc = "Got a tough customer who refuses to crack? This aftermarket modification of the Midi-Sed pleasure vivifier will amplify their pain receptors and get them talking fast."
+// 	item = /obj/item/organ/cyberimp/brain/mindscrew
 
-	cost_min = 500
-	cost_max = 1500
-	stock_max = 3
-	availability_prob = 30
+// 	cost_min = 500
+// 	cost_max = 1500
+// 	stock_max = 3
+// 	availability_prob = 30
 
-/datum/blackmarket_item/tech/revieer
-	name = "Reviver Implant"
-	desc = "Living on the edge? This reviver implant will stitch you back together if you pass out! Every customer who survived reported a 100% success rate!"
-	item = /obj/item/organ/cyberimp/chest/reviver
+// /datum/blackmarket_item/tech/revieer
+// 	name = "Reviver Implant"
+// 	desc = "Living on the edge? This reviver implant will stitch you back together if you pass out! Every customer who survived reported a 100% success rate!"
+// 	item = /obj/item/organ/cyberimp/chest/reviver
 
-	cost_min = 2000
-	cost_max = 3000
-	stock = 1
-	availability_prob = 15
+// 	cost_min = 2000
+// 	cost_max = 3000
+// 	stock = 1
+// 	availability_prob = 15
 
-/datum/blackmarket_item/tech/arm_gun
-	name = "Arm Mounted Laser Cannon Implant"
-	desc = "A retractable laser cannon that fits inside your arm for concealment. You won't be passing any metal detector scans though."
-	item = /obj/item/organ/cyberimp/arm/gun/laser
+// /datum/blackmarket_item/tech/arm_gun
+// 	name = "Arm Mounted Laser Cannon Implant"
+// 	desc = "A retractable laser cannon that fits inside your arm for concealment. You won't be passing any metal detector scans though."
+// 	item = /obj/item/organ/cyberimp/arm/gun/laser
 
-	cost_min = 2000
-	cost_max = 4000
-	stock = 1
-	availability_prob = 15
-	spawn_weighting = FALSE
+// 	cost_min = 2000
+// 	cost_max = 4000
+// 	stock = 1
+// 	availability_prob = 15
+// 	spawn_weighting = FALSE
 
-/datum/blackmarket_item/tech/arm_sword
-	name = "Arm Mounted Energy Sword Implant"
-	desc = "This concealable arm implanted energy sword will make you a cut above the rest of the competition! Just be careful when you pick your nose, or you might be getting a close shave."
-	item = /obj/item/organ/cyberimp/arm/esword
+// /datum/blackmarket_item/tech/arm_sword
+// 	name = "Arm Mounted Energy Sword Implant"
+// 	desc = "This concealable arm implanted energy sword will make you a cut above the rest of the competition! Just be careful when you pick your nose, or you might be getting a close shave."
+// 	item = /obj/item/organ/cyberimp/arm/esword
 
-	cost_min = 2000
-	cost_max = 3500
-	stock = 1
-	availability_prob = 15
-	spawn_weighting = FALSE
+// 	cost_min = 2000
+// 	cost_max = 3500
+// 	stock = 1
+// 	availability_prob = 15
+// 	spawn_weighting = FALSE

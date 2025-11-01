@@ -183,7 +183,7 @@
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses/hardliners
 
 	implants = list(/obj/item/implant/adrenalin)
-	backpack_contents = list(/obj/item/autosurgeon/syndicate/laser_arm, /obj/item/grenade/smokebomb)
+	backpack_contents = list(/obj/item/grenade/smokebomb)
 
 /datum/outfit/job/syndicate/ert/cybersun/leader
 	name = "ERT - Syndicate Cybersun Commando Leader"
@@ -192,7 +192,7 @@
 	ears = /obj/item/radio/headset/syndicate/alt/captain
 	glasses = /obj/item/clothing/glasses/hud/security/night
 
-	backpack_contents = list(/obj/item/autosurgeon/syndicate/laser_arm=1, /obj/item/antag_spawner/nuke_ops/borg_tele/medical/unlocked=1, /obj/item/grenade/smokebomb)
+	backpack_contents = list(/obj/item/antag_spawner/nuke_ops/borg_tele/medical/unlocked=1, /obj/item/grenade/smokebomb)
 
 /datum/outfit/job/syndicate/ert/cybersun/inspector
 	name = "ERT - Syndicate Cybersun Representative"
@@ -247,7 +247,7 @@
 	ears = /obj/item/radio/headset/syndicate/captain
 	r_pocket = /obj/item/megaphone/command
 
-	backpack_contents = list(/obj/item/storage/firstaid/tactical=1, /obj/item/holosign_creator/medical=1, /obj/item/autosurgeon/cmo=1, /obj/item/radio=1, /obj/item/antag_spawner/nuke_ops/borg_tele/medical/unlocked=1)
+	backpack_contents = list(/obj/item/storage/firstaid/tactical=1, /obj/item/holosign_creator/medical=1, /obj/item/radio=1, /obj/item/antag_spawner/nuke_ops/borg_tele/medical/unlocked=1)
 
 
 // hardliners

@@ -70,11 +70,9 @@
 	integrity_failure = 0.50
 	var/broken = FALSE
 
-
 /obj/item/melee/sword/mass/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/two_handed, force_unwielded = 20, force_wielded = 22, icon_wielded = "[base_icon_state]_w")
-
 
 /obj/item/melee/sword/mass/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
 	. = ..()
@@ -295,7 +293,6 @@
 	span_hear("You hear a loud crack as you are washed with a wave of heat."))
 	consume_everything(P)
 	return BULLET_ACT_HIT
-
 
 /obj/item/melee/sword/supermatter/proc/consume_everything(target)
 	if(isnull(target))
